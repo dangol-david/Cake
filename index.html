@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Website</title>
+  <link rel="shortcut icon" type="image" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fjA7OEjDuPfacM1xg1ZQh82knFY1blhzvg&usqp=CAU">
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <!-- bootstrap links -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="all-content">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md " id="navbar">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" id="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fjA7OEjDuPfacM1xg1ZQh82knFY1blhzvg&usqp=CAU" 
+        alt="" width="50px">Dessert First</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb5+fmFhYXHx8eSkpJnZ2ezs7Oqqqp3d3cWFhbk5OT19fU/Pz9aWlra2tqkpKTu7u4PDw+9vb1gYGB9fX0zMzMkJCQaGhqbm5s4ODjLy8tQUFACQSuFAAACZ0lEQVR4nO3d7VLCMBCF4VipfKMiAorI/d+lVmHQP7spyczObt/nCs4Za7RhSVICAAAAAAAAAAAAAAAAgAEYT6b3fkwn4371Nvs7f/ab/IIT67A3mmT2a4/WSW92bLMKLq1zFljmVHyzTlnkTS/4YJ2x0INWcGWdsNhKaTi1DlhsKhd8tM5XwaPYcGYdr4KZ2HBhHa+ChdjwyTpeBU9iw1freBW8ig2t01UhNny3TlfBu9jw2TpeBc9iw5F1vApGYsPGOl4FjdgwwGIqL6Upza0DFpsrDdPBOmGhg1Ywra0jFlqrDZ0/p+oz2nmxTlngJadgSmPrnDfL3hZufb5ELbL2Es82H942TY8fPba8z1aNH9r2EwAAAAAAAAAA8Kz9nI/8mH/2+dypsz1Zf5bU22nbo1/jc1zhoEzSXPkdZlfH2H/trHMW2OUU9PkJ94U8IPzD+6S3POX9rbVOWEz7s+F3lbnQVhvrfBXIBf0OC13JY0P+H1LtMb23jlfBSWzo+duVF0uxoXW6Kgb+M4z/exh/LY3/9zDCUiMXDPCYav+Xxn+3iP9+OIB3/AHs03hebTL32lJqfH5ZNn+/NMXf8+5E/9wCAAAAAAAAAAB4EvucqOhnfYU/r83v2FDmmXvhz00Mf/Zl/PNLfX6p60o9g9b3M9rRntPwZ0HHP8/b611Wf8lnssc/V9/nuNd/8t0I1umqEBv6X0q1xTT+PTM+X5v+k8eEvU95d+RJ7/h3dsW/d20Ad+c5HmP/lTHMHv4OywHcQxr/Ltnk9x0q9z7gNIA7nTvB7+UGAAAAAAAAAAAAAAAAAJ++ACLpVB+zWmM6AAAAAElFTkSuQmCC" alt="" width="30px"></span>
+
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+            <div class="dropdown-menu dropdown-menu">
+              <a href="#" class="dropdown-item">Birthday Cake</a>
+              <a href="#" class="dropdown-item">Chocolate Cake</a>
+              <a href="#" class="dropdown-item">Party Cake</a>
+              <a href="#" class="dropdown-item">Slice Cake</a>
+              <a href="#" class="dropdown-item">Cup Cake</a>
+             
+            </div>
+          </li>
+          <!-- Dropdown end-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons">
+        <i class="fa fa-user"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-cart-plus"></i>
+      </div>
+    </nav>
+
+    <!-- navbar end-->
+
+    <!-- Home  -->
+    <div class="home">
+      <div class="content">
+        <h3>Delicious 
+          <br>Cakes Bakery
+        </h3>
+        <h2>Category <span class="changecontent"></span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, <br> voluptatibus nesciunt error eius sed sit.</p>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+      
+    </div>
+    <!-- Home End  -->
+    <!-- top cards  -->
+    <div class="container" id="box">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxH0yEREEQ9GtQ0CKTRx9yOCmmEFnXDTU1w&usqp=CAU" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4p0z2n9BCIsoBbZSbyUs-gma675-ghzHxCA&usqp=CAU" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdy7l9UylUB3gLvVrzT_OANcS00-suTciiGw&usqp=CAU" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- top cards end -->
+      <!-- banner -->
+      <div class="banner">
+        <div class="content">
+          <h3>Delicious Cake</h3>
+          <h2>UPTO 50% OFF</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, dolorem.</p>
+          <div id="btnorder"><button>Order Now</button></div>
+        </div>
+        <div class="img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Wqd-R5lQKDXoGSY-Hti3GYrnJG1cJorDKCV0amlxv3J9ZVqChd8xFgITQvzJXLqL_ao&usqp=CAU" alt="">
+        </div>
+      </div>
+      <!-- banner end -->
+      <!-- product Card  -->
+      <section id="product-cards">
+        <div class="container">
+          <h1>CAKES</h1>
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://images3.alphacoders.com/104/1042455.jpg" alt="">
+                <div class="card-body">
+                  <h3>Cream Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star "></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$50.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/482/392/desktop-wallpaper-love-cup-cake-cupcake.jpg" alt="">
+                <div class="card-body">
+                  <h3>Cup Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$80.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://w0.peakpx.com/wallpaper/121/497/HD-wallpaper-round-red-and-white-cake-with-cookies-toppings.jpg" alt="">
+                <div class="card-body">
+                  <h3>Cheese Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$59.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo8iHfeD8loLJV2iuf83HaPsjL039_OsCeGqqk8SGX3yAAxjf9UgIZWyVoSyxwBxbcSWU&usqp=CAU" alt="">
+                <div class="card-body">
+                  <h3>Chocolate Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$100.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://cakesburg.co.uk/cdn/shop/products/mermaid-cake-52_2613344e-d2e8-4a46-a72b-a1f4ef9a4add_800x.jpg?v=1654684321" alt="">
+                <div class="card-body">
+                  <h3>Mermaid Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$65.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://www.southernliving.com/thmb/yNqsIP7hL3HtATWz0_DwHpHugZ8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1168376975-2000-bcf590449c6f4e8f91f910cb211c3105.jpg" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Slice Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$85.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://thescranline.com/wp-content/uploads/2023/06/RED-VELVET-CAKE-23-S-01.jpg" alt="">
+                <div class="card-body">
+                  <h3>Red Velvet Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$70.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://i.pinimg.com/736x/7e/53/b2/7e53b23a6a10f3684c35e758cc59b336.jpg" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Sponge Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$60.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- product Card end  -->
+      <section id="product-cards">
+        <div class="container">
+          <h1>
+           Birthday Cake 
+          </h1>
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://mybakers.in/cdn-cgi/imagedelivery/ZMUrshz-omHo_iJ4haWPew/product-images/special-birthday-cake-6-700x962.jpg/public" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Whole Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$60.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://images8.alphacoders.com/819/819377.jpg" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Whole Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$60.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://images7.alphacoders.com/906/906449.jpg" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Whole Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$60.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-shopping-basket" aria-hidden="true"></i></i></button>
+                    <button class="btn btn-secondary m-1" type="button" title="Quick Shop"><i class="fa fa-heart" aria-hidden="true"></i></i></button>
+                  
+                </div>
+                <img src="https://static.vecteezy.com/system/resources/previews/028/556/941/non_2x/chocholate-dripping-happy-birthday-cake-generative-ai-photo.jpg" height="300px" alt="">
+                <div class="card-body">
+                  <h3>Whole Cake</h3>
+                  <div class="star">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                  </div>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eum.</p>
+                  <h6>$60.10 <span><button>Add Cart</button></span></h6>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery  -->
+      <section id="gallery">
+        <div class="container">
+          <h1>Our Gallery</h1>
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Donuts</h3>
+                </div>
+                <img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX7634267.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Popsicle</h3>
+                </div>
+                <img src="https://c4.wallpaperflare.com/wallpaper/20/328/888/ice-cream-4k-hd-full-screen-wallpaper-preview.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Ice Cream</h3>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/row-ice-cream-cones-with-different-flavors-them_882954-19177.jpg" height="270px" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Jalebi</h3>
+                </div>
+                <img src="https://static.toiimg.com/thumb/53099699.cms?width=1200&height=900" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Brownie</h3>
+                </div>
+                <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/12/Fudge-Brownie-Delish-500x500.jpg" height="307px" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <div class="overlay">
+                  <h3 class="text-center">Cookie</h3>
+                </div>
+                <img src="https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg" height="307px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- about -->
+       <div class="container" id="about"    data-aos="fade-up"
+       data-aos-duration="1500">
+         <h1>ABOUT US</h1>
+         <div class="row">
+             <div class="col-md-6 py-3 py-md-0">
+                 <div class="card">
+                     <img src="https://c4.wallpaperflare.com/wallpaper/350/681/242/photography-baby-bread-chef-wallpaper-preview.jpg" alt="">
+                 </div>
+             </div>
+             <div class="col-md-6 py-3 py-md-0">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo nulla dicta perferendis cupiditate autem assumenda unde fugit? Corrupti ipsa fugiat similique voluptate temporibus, cupiditate cumque iusto? Necessitatibus suscipit qui molestias odit ad aspernatur harum aliquid ipsam nisi, culpa quae, magnam dolores cupiditate velit exercitationem ratione deleniti dignissimos labore quia esse ea quos consequuntur perferendis aliquam. Est assumenda doloremque nobis, tenetur fuga similique eligendi nihil non officia possimus aliquid animi nisi ipsum qui veritatis repellat harum accusamus odit iusto laudantium voluptatum ipsa ut fugit veniam. Voluptates sint molestiae officia consequuntur iure repudiandae autem reiciendis, perspiciatis veritatis soluta quia velit necessitatibus.</p>                
+ 
+                 <div id="bt"><button>Read More...</button></div>
+             </div>
+         </div>
+       </div>
+       <!-- about -->
+       <!-- contact  -->
+       <div class="container" id="contact">
+        <h1>Contact Us</h1>
+        <div class="row">
+          <div class="col-md-4 py-1 py-md-0">
+            <div class="form-group">
+              <input type="text" class="form-control" id="usr" placeholder="Name"></div>
+          </div>
+          <div class="col-md-4 py-1 py-md-0">
+            <div class="form-group">
+              <input type="email" class="form-control" id="eml" placeholder="Email"></div>
+          </div>
+          <div class="col-md-4 py-1 py-md-0">
+            <div class="form-group">
+              <input type="number" class="form-control" id="phn" placeholder="Phone"></div>
+          </div>
+          </div>
+          <div class="form-group py-3">
+          <textarea class="form-control" id="comment"  rows="5" placeholder="Message"></textarea></div>
+            <div id="messagebtn">
+            <button>
+              Send Message
+            </button>
+           </div>
+       </div>
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">Cake Bakery</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Cake Bakery</strong> .All Rights Reserved
+        </div>
+        <div class="credit text-center">
+            Designed By <a href="#"></a>
+        </div>
+      </footer>
+      <!-- footer -->
+      
+       
+  </div>
+</body>
+</html>

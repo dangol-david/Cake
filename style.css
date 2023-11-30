@@ -1,0 +1,458 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Uchen', serif;
+}
+.all-content{
+  background: #ca8f5b;
+}
+
+/* navbar */
+#navabr{
+  background-color: #452f19;
+  padding-left: 50px;
+  font-weight: bold;
+}
+#logo{
+  font-size: 20px;
+  color: #fff;
+  
+}
+#logo img{
+  margin-bottom: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar-nav{
+  margin-left: 10px;
+}
+.nav-link{
+  color: #fff !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  margin-left: 15px;
+  transition: 0.5s ease-in-out;
+}
+.nav-link:hover{
+  background-color: rgb(153, 103, 10);
+  color: #fff;
+  border-radius: 5px;
+}
+.icons{
+  margin-left: 60px;
+  color: #fff;
+  margin-right: 20px;
+}
+.icons i{
+  
+  margin-left: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.icons i:hover{
+  transform: translateY(-5px);
+}
+@media screen and (max-width:33px) {
+  #logo{
+    font-size: 15px;
+  }
+}
+
+/* home */
+.home{
+  width: 100%;
+  height: 90.5vh;
+  display: flex;
+  background-image:  url(https://wallpapersmug.com/download/3840x2160/66383e/choco-cake-food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+
+
+.home .content{
+  margin-bottom: 100px;
+  
+}
+.content h3{
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.content h2{
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+}
+.changecontent::after{
+  content: ' ';
+  color: rgb(171, 124, 38);
+  animation: changetext 10s infinite linear;
+  font-weight: bold;
+}
+@keyframes changetext{
+  0%{content: "Birthday cake";}
+  20%{content: "Chocolate cake";}
+  50%{content: "Party cake";}
+  60%{content: "Slice cake";}
+  100%{content: "Cup cake";}
+}
+.content p{
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+  width: 170px;
+  height: 42px;
+  letter-spacing: 5px;
+  background-color: rgba(161,109,14,1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width:800px){
+  .content h3{
+      font-size: 50px;
+  }
+}
+@media screen and (max-width:860px){
+  .icons{
+    display: none;
+  }
+  .home{
+      height: 120vh;
+      
+  }
+}
+@media screen and (max-width:560px){
+  .home{
+      height: 100vh;
+  }
+}
+@media screen and (max-width:330px){
+  .content h2{
+      font-size: 50px;
+  }
+  .content h3{
+      font-size: 30px;
+  }
+}
+/* home section end */
+/* top card */
+#box{
+  margin-top: 50px;
+}
+#box .card{
+  
+  box-shadow: 0 0 5px #000;
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+#box .card img{
+  height: 250px;
+}
+#box .card:hover{
+  transform: translateY(-10px);
+}
+/* banner  */
+.banner{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  background-image: url(https://wi.wallpapertip.com/wsimgs/8-86627_cake-wallpaper-hd.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px #000;
+  margin-top: 20px;
+}
+.banner .img{
+  flex: 1 1 400px;
+}
+.banner .img img {
+  width: 75%;
+}
+.banner .content{
+  flex: 1 1 400px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+.banner .content h3{
+  color: rgba(161,109,14,1);
+  font-weight: bold;
+}
+.banner .content h2{
+  font-size: 50px;
+  color: rgba(161,109,14,1);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+.banner .content p{
+  color: rgba(161,109,14,1);
+}
+#btnorder button{
+  width: 170px;
+  height: 42px;
+  letter-spacing: 5px;
+  background-color: rgba(161,109,14,1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  .banner.content h3{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:855px) {
+  .banner{
+    height: 100vh;
+  }
+  .banner .img img {
+    width: 80%;
+    margin: 60px;
+  }
+}
+/* product cards */
+#product-cards h1{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: rgba(161,109,14,1);
+  text-shadow: 1 1 1 #000;
+  border-bottom: 2px solid rgba(161,109,14,1);
+}
+#product-cards .card{
+  background-color: rgba(161,109,14,1);
+  box-shadow: 0 0 3px #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overlay{
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 7%;
+  margin-left: 0;
+  width: 70px;
+}
+#product-cards .card:hover .overlay{
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s ease-in-out;
+  
+}
+.overlay i {
+  background-color: #2e1700;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    color: burlywood;
+}
+.overlay .btn-secondary{
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+  color: rgb(12, 12, 12);
+  
+}
+#product-cards h3{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+.star .checked{
+  color: rgb(230, 136, 29);
+}
+#products-cards p{
+  color: #2e1700;
+  font-weight: bold;
+}
+#product-cards h6{
+  font-size: 20px;
+  color: #2e1700;
+  font-weight: bold;
+}
+#product-cards h6 span button{
+  width: 100px;
+  height: 26px;
+  font-size: 15px;
+  background: transparent;
+  letter-spacing: 3px;
+  border: 2px solid #573818;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  float: right;
+
+}
+#product-cards h6 span button:hover{
+  background-color: #2e1700;
+  color: #fff;
+}
+/* gallery */
+#gallery{
+  margin-top: 50px;
+}
+#gallery h1{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: rgba(161,109,14,1);
+  text-shadow: 1px 1px 1px #000;
+  border-bottom: 2px solid rgba(161,109,14,1);
+}
+#gallery .card{
+  box-shadow: 3px 3px 3px #000;
+  cursor: pointer;
+}
+#gallery .overlay{
+  opacity: 0;
+  width: 100%;
+  color: #f9f4ee;
+  text-shadow: 1px 1px 1px #000;
+}
+#gallery .card:hover .overlay{
+  opacity: 5;
+  margin-top: 20%;
+  transition: 0.5s ease-in-out;
+}
+* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#about .card{
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/* about */
+
+/* contact */
+#contact{
+  margin-top: 100px;
+}
+#contact h1{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: rgba(161,109,14,1);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgba(161,109,14,1);
+}
+#contact input{
+  background-color: rgba(161,109,14,1);
+}
+#contact input::placeholder{
+  color: white;
+}
+#contact textarea{
+  background-color: rgba(161,109,14,1);
+}
+#contact textarea::placeholder{
+  color: white;
+}
+#messagebtn{
+  text-align: center;
+}
+#messagebtn button{
+  width: 200px;
+  height: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#messagebtn button:hover{
+  background-color: rgba(161,109,14,1);
+}
+/* contact */
+* footer */
+#footer{
+    width: 100%;    
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: rgba(161,109,14,1);
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credit{
+    color: white;
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
